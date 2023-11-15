@@ -13,6 +13,7 @@ nav {
     align-items: center;
     background-color: #333;
     padding: 10px 20px;
+    animation: fade-in 1s forwards;
 }
 
 .logo a {
@@ -59,7 +60,7 @@ nav {
     border-bottom: 3px solid white;
     padding-bottom: 10px;
     color: white;
-    transition: .5s;
+    animation: fade-in 3s forwards;
 }
 
 .gallery{
@@ -70,4 +71,14 @@ nav {
 
 .gallery img{
     width: 100%;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
