@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+}
+
+/* Header Styling Begins */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Header Styling Ends */
+
+
+/* Container (Header and Columns) Styling Begins */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    position: relative;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    color: white;
+    transition: .5s;
+}
+
+.container .imgGallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .heading h3 span{
+    font-weight: 100;
+}
+
+.container .imgGallery .column{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .imgGallery .column img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.hover:hover{
+    filter: grayscale(100%);
+    transform: scale(1.01);
+    transition: .5s;
+}
+
+.footer{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 769px){
+    /* Styling For Smaller Screens */
+    .container .imgGallery{
+        flex-direction: column;
+    }
+    .container .imgGallery .column{
+        width: 100%;
+    }
+    
+}
+
+/* Container (Header, Footer, and Columns) Styling Ends */
+
+/* Full Image Styling Begins (When you click Image) */
+
+.fullImg{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.fullImg img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.fullImg span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}

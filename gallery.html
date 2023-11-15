@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <script
+      src="https://kit.fontawesome.com/785ba2a311.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section begins -->
+    <header>
+      <nav id="navbar">
+        <div class="logo">
+          <a href="#">Anzal Khan</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="gallery.html">Home</a></li>
+          <li><a href="albums.html">Albums</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section ends-->
+
+    <!-- Gallery Section Begins-->
+    <div class="container">
+      <div class="heading">
+        <h3>Photo <span>Gallery</span></h3>
+      </div>
+      <div class="fullImg" id="fullImgBox">
+        <img
+          src="https://drive.google.com/uc?export=view&id=1JDonAM6eE4hbe7XF9PBHdStC64K2htUG"
+          id="fullImg"
+        />
+        <span onclick="closeImg()">X</span>
+      </div>
+      <div class="imgGallery">
+        <div class="column">
+          <img
+            src="https://drive.google.com/uc?id=1jr4hI1wMww1hrgXwht3I0JyJVIqOhWKr"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1okY_NLuSo_ITWffZW5MasQ-0x1XFOs1i"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1R16zSyOLdTN8Y90qEYnwegS5Z72d_QY_"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1FSuT-B7YDmGKUpVhHzao4qj_51YQT2ey"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=18pYAGQhUwtnQzsMI7bL-LB-S4Zbm7aqs"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://drive.google.com/uc?id=1dwJ7Hf64FFs0tWyfmTRo3NfYx9Aukoun"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1ZzQL9m6X8BRNzq9mUbq4xHie2fgLcEtF"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1GjPHDJt4kJlqHMbTDn4KLj705yvgHDMN"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1SJBeI507GwNWOkuBZXnY-eHy7fHFklmF"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1jomdNrHvw7oLg6LuhkkwU_Sl7yj58srh"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="https://drive.google.com/uc?id=1-WCJqZ4yyhlXyRtsp9dl11wDgn0F6DwZ"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1ndjXfMzZvbEBHF-aNqtbVtk3xlVEaHWw"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1bIIy4X1nRFcjm9ggT73NY6PwA3_I50Na"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=11o1BZPb_2jBMrfqM3kgl-mw2XDEc0N5d"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+          <img
+            src="https://drive.google.com/uc?id=1FvUEduXC_UOBH-mlJ_aTO4XeGjwDcldW"
+            class="hover"
+            onclick="openImg(this.src)"
+          />
+        </div>
+      </div>
+      <!-- Gallery Section Ends -->
+      <footer class="footer">
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/film.anz/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+    <script src="gallery.js"></script>
+  </body>
+</html>

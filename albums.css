@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #333;
+}
+
+/* Header Styling Begins */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Header Styling Ends */
+
+/* Album Styling Begins */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    position: relative;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    color: white;
+    transition: .5s;
+}
+
+.container .imgGallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .heading h3 span{
+    font-weight: 100;
+}
+
+.container .imgGallery .column{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .imgGallery .column img{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.text{
+    color: black;
+    background-color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.hover:hover {
+    filter: grayscale(100%);
+    transform: scale(1.01);
+    transition: .5s;
+}
+
+@media only screen and (max-width: 769px){
+    /* Styling For Smaller Screens */
+    .container .imgGallery{
+        flex-direction: column;
+    }
+    .container .imgGallery .column{
+        width: 100%;
+    }
+    
+}
+
+/* Album Styling Ends */
+
+.skeleton{
+    animation: skeleton-loading 1s linear infinite alternate;
+    opacity: 0.7;
+}
+
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
