@@ -8,7 +8,7 @@ btn.addEventListener('click', function(e){
   var body = 'Name: '+name + '<br/> Email: ' +email + '<br/> Number: ' +number + '<br/> Message: ' +message;
 
     Email.send({
-      SecureToken : "5c10bedb-1bde-4e92-8c4e-a22a3adbcd3c",
+      SecureToken : "3e147d8f-84c3-44e0-b2e0-677cbe1cbb3c",
       To : 'filmbyanz@gmail.com',
       From : "filmbyanz@gmail.com",
       Subject : "Message",
