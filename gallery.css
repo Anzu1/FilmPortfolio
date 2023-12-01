@@ -180,3 +180,39 @@ li:hover::before {
         opacity: 1;
     }
 }
+/* Footer Styling Begins */
+
+footer{
+    background-color: #333;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 20px 20px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.socialIcons a i{
+    font-size: 1em;
+    color: white;
+    opacity: 0.9;
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+/* Footer Styling Ends */
